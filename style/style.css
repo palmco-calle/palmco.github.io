@@ -1,0 +1,906 @@
+/* Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+a:hover, a:active {
+	outline: 0;
+}
+
+b, strong {
+	font-weight: bold;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+ul, ol {
+	margin:0;
+}
+dd {
+	margin: 0 0 0 40px;
+}
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+form {
+	margin: 0;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+label {
+	cursor: pointer;
+}
+button, input, select, textarea {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+}
+button, input {
+	line-height: normal;
+	*overflow: visible;
+}
+table button, table input {
+	*overflow: auto;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+}
+input:valid, textarea:valid {
+}
+input:invalid, textarea:invalid {
+	background-color: #e4f7e2;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td {
+	vertical-align: top;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/* End reset */
+
+body {
+	color:#666;
+	font-size:14px;
+	font-weight:normal;
+	font-family: 'Open Sans', sans-serif;
+}
+
+::-moz-selection {
+	background: #9cbb7e;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #9cbb7e;
+	color: #fff;
+	text-shadow: none;
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+h1 {
+	padding: 2em 0 1em 0;
+	font-size: 28px;
+	text-align: center;
+}
+h2 {
+	padding: 0 0 1em 0;
+	font-size: 20px;
+}
+h3 {
+	padding: 0 0 0 0;
+	color: #6e8a4c;
+	font-size: 18px;
+}
+
+a {
+	color:#838383;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+	color:#9d9c9c;
+}
+
+p {
+	padding: 0 0 1em 0;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+ul, ol {
+
+	margin: 0 0 1em 1em;
+	list-style: circle;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Alignment */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin:20px 20px 20px 0;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin:0 0 20px 0;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 20px auto;
+}
+.alignnone{
+	clear: both;
+	display: block;
+	margin: 20px 0;
+}
+
+/* layout styles */
+
+#wrap {
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+/* header styles */
+
+#header {
+
+}
+
+.logo {
+	margin: auto;
+	width: 700px;
+	padding: 2em 0 0 0;
+}
+.logo img {
+	max-width: 100%;
+	margin: auto;
+}
+
+#huvudmeny {
+}
+
+#huvudmeny ul {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 850px;
+	text-align: center;
+}
+
+#huvudmeny li {
+	margin-right: 3%;
+	text-align: center;
+}
+
+#huvudmeny li a {
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:18px;
+	padding: 24px 0 4px 0;
+	text-align: center;
+
+}
+
+#huvudmeny .current_page_item a {
+	color: #ed0f67;
+}
+
+#huvudmeny li a:hover {
+	color:#9d9c9c;
+}
+
+#border {
+	height: 8px;
+	margin: 2px auto 0 0;
+	border-top: solid 3px #999;
+}
+
+/* Index styles */
+
+#circles {
+	width: 80%;
+	margin:auto;
+	padding-bottom: 4em;
+}
+#circles h2 {
+	font-weight: 100;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4em;
+	font-size: 28px;
+}
+#circles ul {
+	margin: 0 auto 2em auto;
+	width: 80%;
+}
+#circles li {
+
+	list-style: none;
+	width: 33%;
+	float: left;
+	margin: 0 0 4em 0;
+}
+#circles img {
+	margin-right: 5%;
+	max-width: 100%;
+}
+#circles h3 {
+	clear:both;
+	text-align: center;
+	padding: 1em 0 1em 0;
+	margin: auto;
+	width: 75%;
+}
+
+.divider {
+	border: solid 3px #d1d2d4;
+	height: 5px;
+	width: 100%;
+	margin: 1em auto 1em auto;
+}
+
+.divider_small {
+	border: solid 3px #d1d2d4;
+	height: 5px;
+	width: 80%;
+	margin: 1em auto 1em auto;
+}
+
+#senaste-nytt {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;	
+	clear: both;
+	padding:3em 0 20em 2em;
+
+}
+
+#senaste-nytt img {
+	float: left;
+	width: 200px;
+	margin: 0 3% 3em 0;
+}
+
+.date_start {
+	margin: 2em 0 0 0;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.date {
+	margin: 2em 0 1em 0;
+	padding: 7px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
+#senaste-nytt h1 {
+	margin: auto;
+	width: 50%;
+	text-align:center; padding: 0;
+	font-weight: 100;
+}
+
+.news_item {
+	clear: both;
+	margin: 2em 0 3em 1em;
+	width: 95%;
+}
+
+.news_item h2 {
+	margin: 0 0 0 0;
+	font-weight: 100;
+	font-size: 22px;
+}
+
+.page {
+	background-size:60%;
+	background: url('/images/ochtecken_vattenstampel.png') no-repeat 60% 50%;
+}
+
+
+/* About page */
+#about_small {
+	margin: auto;
+	width: 60%;
+	padding: 0 0 0em 0;
+}
+
+#about_small h1 {
+	margin: auto;
+	float: none;
+	width: 50%;
+}
+#about_small h2 {
+	padding-top: 3em;
+}
+#about_small h3 {
+}
+
+#about {
+	margin: auto;
+	width: 75%;
+}
+
+#about p {
+	font-family: 'Open Sans', sans-serif;
+}
+#about h1 {
+	margin: auto;
+	float: none;
+	width: 75%;
+}
+#about h2 {
+	padding: 3em 0 0 0;
+}
+#about h3 {
+}
+
+
+#about ul {
+	color: #6e8a4c;
+}
+#about li {
+	padding: 0 0 1em 0;
+	font-size: 16px;
+}
+
+
+
+p.pink {
+	margin: auto;
+	width: 60%;
+	padding: 2em 0 2em 0;
+	color: #ed0f67;
+	text-align: center;
+	font-size: 18px;
+	line-height: 2em;
+}
+
+#about_footer {
+	clear: both;
+	margin: auto;
+	width: 700px;
+}
+#about_footer p {
+	text-align: center;
+	font-size: 18px;
+	color: #ed0f67;
+	text-transform: uppercase;
+	margin: auto;
+	width: 70%;
+	padding: 3em 0 2em 0;
+}
+#about_footer h2 {
+	text-transform: uppercase;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+#about_footer img {
+	margin: 0
+}
+
+/* Original page */
+
+#intro_original h2 {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	color: #6e8a4c;
+	padding: 3em 0 0 0;
+	font-weight: 200;
+}
+
+#original {
+	margin: auto;
+	width: 75%;
+	padding: 6em 0 4em 0;
+}
+
+
+
+#original p {
+}
+
+
+#original img {
+	margin: 0 0 10% 10%;
+}
+
+#original_divider {
+
+	margin: 14em 0 0 0;
+	width: 20%;
+	float: left;
+}
+
+
+
+/* Produkter page */
+
+#produkter {
+	float: left;
+	width: 55%;
+	margin: 1em 0 0 0;
+	padding: 0 0 10em 0;
+}
+
+.produkter_lista {
+	float: left;
+	background-color: #666;
+	width: 19%;
+	color: #fff;
+	margin: 2em 2% 0 12%;
+	border: 1px solid #fff;
+	box-shadow: 2px 2px 3px #888888;
+	padding: 1em 1em 2em 1em;
+}
+
+.produkter_lista p {
+	padding: 1em 0 0 4px;
+	font-size: 16px;
+}
+.produkter_lista ul {
+	font-family: 'Open Sans', sans-serif;
+	padding: 1em;
+}
+.produkter_lista li {
+	padding: 0 0 2px 0;
+}
+
+
+h2.productfooter {
+	color: #333;
+	text-shadow: 1px #ccc;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+#produkter_footer {
+	clear: both;
+	margin: 0 auto 8em auto;
+	width:60%; background-color: #f57f20;
+	border: double 6px #fff;
+	padding: 1em;
+	box-shadow: 4px 4px 4px #ccc;
+}
+#produkter_footer p {
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	margin: auto;
+	width: 70%;
+	padding: 1em;
+}
+#produkter_footer h2 {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+#produkter_footer img {
+	margin: 2em 0 0 0;
+}
+
+/* Tryckkonsult */
+#offered-services {
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	width: 100%;
+}
+.offered-service {
+	flex: 1;
+	background: #666666;
+	margin: 1em;
+	padding: 0.5em;
+}
+#offered-services h3 {
+	font-weight: 200;
+	color: white;
+	height: 3em;
+}
+#offered-services li {
+	color: white;
+	list-style: disc;
+	padding: 0;
+	font-size: 90%;
+}
+
+
+/* Contact page */
+
+#intro_contact {
+	width: 70%;
+	margin: 0 auto 1em auto;
+	text-align: center;
+	text-align:center;
+}
+
+
+#intro_contact h1 {
+	margin: 2em 0 0 0;
+}
+
+#contact {
+	width: 37%;
+	float: left;
+	margin: 2em 0 2em 15%;
+	color: #6e8a4c;
+	font-size: 32px;
+}
+
+.sidebar_contact {
+	float: left;
+	width: 31%;
+	margin: 3em 0 2em 0;
+	padding: 0 0 3em 0;
+}
+.sidebar_contact p {
+	width: 80%;
+	margin: auto;
+}
+.sidebar_contact h2 {
+	width: 80%;
+	margin: auto;
+}
+
+/* job page */
+
+#jobs {
+	width: 100%;
+	margin: auto;
+}
+
+.job_images {
+	float: left;
+	width: 33.3333%;
+}
+
+
+
+/* Single Post Style
+--------------------------------------------- */
+#post {
+	float: left;
+	width: 58%;
+	padding: 2em 0 4em 13%;
+	margin: 0 0 3em 0;
+}
+
+#post h1 {
+	margin: 0;
+	text-align: left;
+	padding: 2em 0 1em 0;
+}	
+
+.sidebar {
+	float: left;
+	width: 23%;
+	padding: 5em 0 4em 5%;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	margin: 3em 0 0 1%;
+}	
+
+.archive_item {
+	clear: both;
+	margin: 2em 0 3em 0;
+	width: 95%;
+}
+
+
+/* Footer */
+
+
+#footer {
+	clear: both;
+	margin: auto;
+	width: 80%;
+	padding: 2em 0 0 0;
+}
+
+.footer_sign {
+	float: left;
+	width: 40%;
+}
+.footer_sign p {
+	text-transform: uppercase;
+	margin: 4em 0 0 0;
+	font-size: 14px;
+}
+.footer_slogan {
+	float: right;
+	width: 30%;
+}
+
+
+
+/* ==|== non-semantic helper classes ======================================== */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+
+/* =Responsive Structure
+----------------------------------------------- */
+
+
+@media only screen and (max-width: 1000px) {
+	#main {
+		max-width:1000px;
+		margin:0 auto;
+		padding: 4em 2em;
+	}
+
+}
+@media only screen and (max-width: 960px) {
+	#main {
+		max-width:1000px;
+		margin:0 auto;
+		padding: 4em;
+	}
+	
+	#middle-sidebar{
+		float:left;
+		width:25%;
+		margin:30px 0 60px 50px;
+	}
+
+	#homepage-middle-sidebar{
+		float:left;
+		width:25%;
+		margin:30px 0 60px 50px;
+	}
+
+}
+@media only screen and (max-width: 768px) {
+	.page {
+		background: none;
+	}
+	#wrap {
+		width: auto;
+	}
+	
+	h1 {
+		font-size: 24px;
+		width: 90%;
+		margin: auto;
+		clear: both;
+	}
+	h2 {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		clear: both;
+	}
+	h3 {
+		font-size: 18px;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		float: none;
+	}
+	p {
+		text-align: center;
+		font-size: 12px;
+	}
+	
+	img.aligncenter {
+		max-width: 100%;
+	}
+	.img {
+		max-width: 100%;
+	}
+
+	.logo {
+		float: none;
+		width: 100%;
+	}
+	.logo img {
+		max-width: 100%
+	}
+
+	#huvudmeny ul {
+		width: auto;
+	}
+	#huvudmeny li {
+		margin: auto;
+		padding-top: 1em;
+		padding:2em 3% 1em;
+	}
+
+	.divider {
+		display: none;
+	}
+
+	#circles {
+		width: 100%;
+	}
+
+	#circles ul {
+		width: 100%;
+		margin: auto;
+	}
+
+	.news_item {
+		margin: auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	#senaste-nytt {
+		padding: 0
+	}
+	#senaste-nytt a {
+		margin: auto;
+		width: 75%;
+		text-align: center;
+	}
+
+	#senaste-nytt img {
+		float: none;
+		margin: 0 0 1em 0;
+		width: 100%;
+	}
+
+	.footer_slogan {
+		float: none;
+		margin: auto;
+		width: 80%;
+		text-align: center;
+	}
+	.footer_sign {
+		float: none;
+		margin: auto;
+		width: 80%;
+		text-align: center;
+	}
+
+	#intro_original {
+		clear: both;
+	}
+
+	#about, #produkter, #contact {
+		width: 100%;
+		padding: 0;
+		float: none;
+		clear: both;
+	}
+	#about p {
+		width: 90%;
+		margin: auto;
+	}
+	#about img, #original img, #produkter img {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin: auto;
+	}
+	#original img, #about img {
+		display: none;
+	}
+	#about ul {
+		text-align: center;
+		margin: auto;
+		width: 90%;
+		list-style-type: none;
+		font-size: 12px;
+	}
+
+	.produkter_lista, .sidebar_contact {
+		float: none;
+		margin: auto;
+		text-align: center;
+		width: 97%;
+		clear: both;
+	}
+	.produkter_lista ul {
+		list-style: none;
+	}
+
+	#contact {
+		margin: 0;
+	}
+
+	.job_images {
+		float: none;
+		width: 100%;
+	}
+
+	.job_images img {
+		max-width: 100%;
+		height: auto;
+	}
+}
